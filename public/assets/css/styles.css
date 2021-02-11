@@ -1,0 +1,142 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #3d3d44;
+}
+
+.navbar-custom{
+  background-color: #2c3e50;
+  font-size: larger;
+  font-weight: 600;
+  color:#23a9f2 !important;
+}
+
+.logoimg{
+  /* border: 1px solid #9adafc;   */
+  border-radius: 3px;
+  /* box-shadow: inset 0 0 1px 1px #b5e61d; */
+  height: 80px;
+  transform: rotate(35deg)
+}
+
+.jumbotron{
+  background-color: #4fbaf3;
+}
+
+.save-note {
+  display: none;
+}
+
+.edit-note{
+  display: none;
+}
+
+.icons i {
+  margin-left: 15px;
+  margin-right: 15px; 
+  font-size: 1.1rem;
+  cursor: pointer;  
+  color:#4fbaf3;
+}
+
+.icondiv{
+  display: inline;
+}
+
+.display-4{
+  font-family: 'Lobster', cursive;
+}
+
+.h4text{
+  font-family: 'Tangerine', cursive;
+  font-size: 60px;
+}
+
+.note-textarea, .note-title {
+  color: #000000;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.note-textarea {
+  resize: none;
+  height: calc(100% - 63px);
+  padding-top: 15px;  
+}
+
+.note-title {
+  height: 50px;
+  margin-top: 13px;
+  font-size: 3rem;
+}
+
+.note-title:read-only, .note-textarea:read-only {
+  color: #757575;
+}
+
+
+.list-container .card {
+  height: calc(100vh - 70px);
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 13px;
+}
+
+.list-container {
+  padding-left: 0;
+}
+
+.list-container .list-group,
+.list-container .list-group-item:first-child,
+.list-container .card {
+  border-top: none;
+}
+
+.list-container i {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.list-container .list-group-item {
+  padding: 20px;
+  cursor: pointer;
+}
+
+/* footer */
+footer{
+  background-color: #383838;
+  color:#4fbaf3;
+  height: 30px;
+  text-align: center;
+  font-size: 17px;
+}
+
+/* change color of delete icon on hover */
+.delete-note:hover{
+  color: crimson;
+}
+
+.icondiv{
+  position: relative;
+}
+
+/* css selector for tooltip */
+.tooltiptext{
+  position: absolute;
+  display: none;
+  color: white;
+  left: 0%;
+  width: 100px;
+  font-size: 12px;
+  color:#23a9f2;
+}
+
+/* display tooltip */
+.icondiv:hover .tooltiptext{
+  display: block;
+}
+
+
