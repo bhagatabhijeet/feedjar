@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns1:alerts xmlns:ns1="http://gov.fema.ipaws.services/feed">
+  <alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+    <identifier>NWS-IDP-PROD-4781324-3855623</identifier>
+    <sender>w-nws.webmaster@noaa.gov</sender>
+    <sent>2021-02-11T06:03:00-07:00</sent>
+    <status>Actual</status>
+    <msgType>Update</msgType>
+    <scope>Public</scope>
+    <code>IPAWSv1.0</code>
+    <note></note>
+    <references>w-nws.webmaster@noaa.gov,NWS-IDP-PROD-4780962-3855431,2021-02-11T03:31:00-07:00</references>
+    <info>
+      <language>en-US</language>
+      <category>Met</category>
+      <event>Winter Weather Advisory</event>
+      <responseType>Execute</responseType>
+      <urgency>Expected</urgency>
+      <severity>Moderate</severity>
+      <certainty>Likely</certainty>
+      <eventCode>
+        <valueName>SAME</valueName>
+        <value>NWS</value>
+      </eventCode>
+      <eventCode>
+        <valueName>NationalWeatherService</valueName>
+        <value>WWY</value>
+      </eventCode>
+      <effective>2021-02-11T06:03:00-07:00</effective>
+      <onset>2021-02-11T14:00:00-07:00</onset>
+      <expires>2021-02-12T06:15:00-07:00</expires>
+      <senderName>NWS Missoula MT</senderName>
+      <headline>Winter Weather Advisory issued February 11 at 6:03AM MST until February 12 at 11:00AM MST by NWS Missoula MT</headline>
+      <description>* WHAT...Snow expected. Total snow accumulations of 2 to 4
+inches. Roads are expected to become snowcovered and slick
+this evening through Friday morning. Wet road surfaces in the
+lowest elevations may freeze overnight tonight, creating icy
+conditions.
+
+* WHERE...Camas Prairie, Grangeville and vicinity, Greer Grade,
+Highway 95 Slate Creek to Riggins, and White Bird Grade.
+
+* WHEN...From 1 PM this afternoon to 10 AM PST Friday.
+
+* IMPACTS...Travel could be affected.</description>
+      <instruction>Slow down and use caution while traveling.
+
+The latest road conditions for the state you are calling from can
+be obtained by calling 5 1 1.</instruction>
+      <web>http://www.weather.gov</web>
+      <parameter>
+        <valueName>NWSheadline</valueName>
+        <value>WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 1 PM THIS AFTERNOON TO 10 AM PST FRIDAY</value>
+      </parameter>
+      <parameter>
+        <valueName>HazardType</valueName>
+        <value>Snow</value>
+      </parameter>
+      <parameter>
+        <valueName>VTEC</valueName>
+        <value>/O.CON.KMSO.WW.Y.0016.210211T2100Z-210212T1800Z/</value>
+      </parameter>
+      <parameter>
+        <valueName>PIL</valueName>
+        <value>MSOWSWMSO</value>
+      </parameter>
+      <parameter>
+        <valueName>BLOCKCHANNEL</valueName>
+        <value>CMAS</value>
+      </parameter>
+      <parameter>
+        <valueName>BLOCKCHANNEL</valueName>
+        <value>EAS</value>
+      </parameter>
+      <parameter>
+        <valueName>BLOCKCHANNEL</valueName>
+        <value>NWEM</value>
+      </parameter>
+      <parameter>
+        <valueName>eventEndingTime</valueName>
+        <value>2021-02-12T11:00:00-07:00</value>
+      </parameter>
+      <area>
+        <areaDesc>Orofino/Grangeville Region; Lower Hells Canyon/Salmon River Region</areaDesc>
+        <geocode>
+          <valueName>UGC</valueName>
+          <value>IDZ007</value>
+        </geocode>
+        <geocode>
+          <valueName>UGC</valueName>
+          <value>IDZ008</value>
+        </geocode>
+        <geocode>
+          <valueName>SAME</valueName>
+          <value>016035</value>
+        </geocode>
+        <geocode>
+          <valueName>SAME</valueName>
+          <value>016049</value>
+        </geocode>
+      </area>
+    </info>
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+      <SignedInfo>
+        <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+        <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+        <Reference URI="">
+          <Transforms>
+            <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+          </Transforms>
+          <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+          <DigestValue>Lds13Nnkc+Ca5X5cWrV4nfQnjUiYR6bwnhnVZnpMLA4=</DigestValue>
+        </Reference>
+      </SignedInfo>
+      <SignatureValue>EWsDQBzaS4m8sf8dSzu33JRhzRiDn5HOseWOo0OMkrc/qZozaACG5DOus/kBjn3mtmwIn1sWY0IP
+ypDSAqA+NPuMcGg6YV8NPOkLszAhATC4sWSE/0gzrjuhqBu+Va8v449L0upPIvAANp85WWWTE14p
+opCBdfob2gLnvAzeYDoifi2ag48lU/cTW38SOLTpQEqokSWe4rk9yl6LZ/saTi1rKgD6aHHf8EsN
+RPNZ7WZQCDVHEDTA+6IRgACHt5cPztt78lRiF/vBFjIDidc/B/LzFQmv9NGI91vgQ26oLvnG7h1c
+oOiNjDPP9xT4XmUHWqwvPCvjzxi8i2inTzUW5A==</SignatureValue>
+      <KeyInfo>
+        <X509Data>
+          <X509SubjectName>CN=IPAWSOPEN200032,OU=A01410C0000016FECA3CC6E0000D10E,OU=Devices IPAWS,OU=National Continuity Programs,O=FEMA IPAWS,C=US</X509SubjectName>
+          <X509Certificate>MIIGOjCCBSKgAwIBAgIQQAFv7KPMi1AO0ah4+cIlNjANBgkqhkiG9w0BAQsFADBdMQswCQYDVQQG
+EwJVUzESMBAGA1UECgwJSWRlblRydXN0MSAwHgYDVQQLDBdJZGVuVHJ1c3QgR2xvYmFsIENvbW1v
+bjEYMBYGA1UEAwwPSUdDIFNlcnZlciBDQSAxMB4XDTIwMDEyODE0NTIzNVoXDTIzMDEyNzE0NTIz
+NVowgaUxCzAJBgNVBAYTAlVTMRMwEQYDVQQKEwpGRU1BIElQQVdTMSUwIwYDVQQLExxOYXRpb25h
+bCBDb250aW51aXR5IFByb2dyYW1zMRYwFAYDVQQLEw1EZXZpY2VzIElQQVdTMSgwJgYDVQQLEx9B
+MDE0MTBDMDAwMDAxNkZFQ0EzQ0M2RTAwMDBEMTBFMRgwFgYDVQQDEw9JUEFXU09QRU4yMDAwMzIw
+ggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCBJs4hBeytkkLIgICpm4k3hGclFaNTKbZV
+XrLNUmPKTlD57dRBqghVotwVa3ByVovbVEa7YeOZ2mVgief7eHNle8HN7OZszzugNjl1G+9EeruM
+Bu9boylXhdsIfQkokKnYXxnlyUDaVS0zXLXXqfVhRMQkmIC9xmdVyBuWy4y1dyF2AR/V7O7rYxld
+q5nZVYdtzBs4KEpd6LtxlTNbhbmNcZ9sFvoAAF46gcFOVq9dAUJ8Zz3fiHBMLKCNLy5jXWUp/VWX
+Z/QHyQAj23ppNR3Z0Anxukuv7x0tK83ONPR+DUH3D4wJqA3Ny+tvKdwBeEX1IMOqkF+81myeShdA
+W1TlAgMBAAGjggKrMIICpzAOBgNVHQ8BAf8EBAMCBLAwfQYIKwYBBQUHAQEEcTBvMCkGCCsGAQUF
+BzABhh1odHRwOi8vaWdjLm9jc3AuaWRlbnRydXN0LmNvbTBCBggrBgEFBQcwAoY2aHR0cDovL3Zh
+bGlkYXRpb24uaWRlbnRydXN0LmNvbS9jZXJ0cy9pZ2NzZXJ2ZXJjYTEucDdjMB8GA1UdIwQYMBaA
+FEmPzun/fOHu1ihtJR/F1o5mclD3MIIBNAYDVR0gBIIBKzCCAScwggEjBgtghkgBhvkvAGQlATCC
+ARIwSwYIKwYBBQUHAgEWP2h0dHBzOi8vc2VjdXJlLmlkZW50cnVzdC5jb20vY2VydGlmaWNhdGVz
+L3BvbGljeS9JR0MvaW5kZXguaHRtbDCBwgYIKwYBBQUHAgIwgbUMgbJDZXJ0aWZpY2F0ZSB1c2Ug
+cmVzdHJpY3RlZCB0byBSZWx5aW5nIFBhcnR5KHMpIGluIGFjY29yZGFuY2Ugd2l0aCBJR0MtQ1Ag
+KHNlZSBodHRwczovL3NlY3VyZS5pZGVudHJ1c3QuY29tL2NlcnRpZmljYXRlcy9wb2xpY3kvSUdD
+L2luZGV4Lmh0bWwpLiBJR0MtQ1BTIGluY29ycG9yYXRlZCBieSByZWZlcmVuY2UuMEUGA1UdHwQ+
+MDwwOqA4oDaGNGh0dHA6Ly92YWxpZGF0aW9uLmlkZW50cnVzdC5jb20vY3JsL2lnY3NlcnZlcmNh
+MS5jcmwwGgYDVR0RBBMwEYIPSVBBV1NPUEVOMjAwMDMyMB0GA1UdDgQWBBTdWincelxTnY9EfIMs
+xyllbdsOhzA7BgNVHSUENDAyBggrBgEFBQcDAQYIKwYBBQUHAwIGCCsGAQUFBwMFBggrBgEFBQcD
+BgYIKwYBBQUHAwcwDQYJKoZIhvcNAQELBQADggEBAC8HPoyMRHPFA4hTxonEsFKst8cPaARncIkc
+UVsLWVfzLC9wSFPFDVQLodWBWj2/rmY+d5OMUjRtQrIdpbaPmRD0OzDwyZxX9ZbRE8xTdsbBrQji
+IBx8XLyJMweC7EhOQYUYsZIeHemkQNMp0L6x3EmWvj/HnqVSuU4bpMLZCcqCYdgs/dgEp0I3CYcu
+FQS3j/VfIFyGgNXXeaj2Cv4u+soccUjUB8YFAyCsgEhz1Eub1BLG4RmH9TnTs8tnP1tR7UPQWdC7
+1nta+i//BDszr6Il5i0sTUdSkzI00JN7UPepe2v1SqrB8TFLQwatr7SOgUgNy8SbmtHppbigOrB5
+9wo=</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </Signature>
+  </alert>
+</ns1:alerts>

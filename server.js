@@ -24,6 +24,13 @@ app.get('/capfeed',(req,res)=>{
 
 });
 
+app.get('/mockfemacap',(req,res)=>{
+  res.contentType('application/xml');
+  res.type('.xml');
+  res.sendFile(path.join(__dirname ,'public', 'mockfemacap.cap'));
+
+});
+
 const feed = new Feed({
   title: "Feed Title",
   description: "This is my personal feed!",
