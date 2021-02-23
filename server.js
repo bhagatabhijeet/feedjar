@@ -1,4 +1,5 @@
 const express = require('express');
+// const bodyparser = require('body-parser');
 const path = require('path');
 const fs = require('fs');
 const { Feed } = require("feed");
@@ -17,6 +18,17 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(routes);
+
+app.use((err, req, res, next) => {
+  // you can error out to stderr still, or not; your choice
+  console.error(err); 
+
+  // body-parser will set this to 400 if the json is in error
+  if(err.status === 400)
+    return res.status(err.status).json({ type: "error", message: err.message });
+
+  return next(err); // if it's not a 400, let the default error handling do it. 
+});
 app.get('/capfeed',(req,res)=>{
   res.contentType('application/xml');
   res.type('.xml');
@@ -28,6 +40,13 @@ app.get('/mockfemacap',(req,res)=>{
   res.contentType('application/xml');
   res.type('.xml');
   res.sendFile(path.join(__dirname ,'public', 'mockfemacap.cap'));
+
+});
+
+app.get('/mockfemajson',(req,res)=>{
+  res.contentType('application/json');
+  res.type('.json');
+  res.sendFile(path.join(__dirname ,'public', 'mockFemaWebDisasterDeclarations.json'));
 
 });
 

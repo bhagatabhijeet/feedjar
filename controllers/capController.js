@@ -6,6 +6,7 @@ const { JSDOM } = require("jsdom");
 const path = require("path");
 const fs = require("fs");
 const writeFileAsync = util.promisify(fs.writeFile);
+const mockfema = require('../classes/MockFemaCap');
 // const fsReadFileAsync= util.promisify(fs.readFile);
 
 function getTextFromFile(filePath) {
@@ -64,6 +65,10 @@ async function jsonToCap(req, res) {
   }
   res.send(xml);
 }
+
+//new code
+const femagen = new mockfema.MockFemaCapgen(config);
+const f
 
 module.exports = {
   jsonToCap,
